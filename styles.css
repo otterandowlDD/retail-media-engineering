@@ -82,3 +82,10 @@
 .owl-editorial .insight-list .card h3{font-family:"Noto Serif Thai",Georgia,serif;font-size:clamp(1.3rem,2.3vw,2rem);line-height:1.48;letter-spacing:-.025em}.owl-editorial .insight-list .card p{line-height:1.9}
 @media(max-width:850px){.owl-editorial .article-page{padding-top:30px}.owl-editorial .editorial-article>.ed-meta{margin-bottom:32px}.owl-editorial .ed-hero-visual{min-height:360px;padding:18px}.owl-editorial .ed-factory{height:175px}.owl-editorial .ed-author{flex-wrap:wrap}.owl-editorial .insight-list{grid-template-columns:1fr}.owl-editorial .editorial-article h2{margin-top:50px}}
 @media(max-width:520px){.owl-editorial .nav{flex-wrap:wrap;gap:10px}.owl-editorial .nav nav{width:100%;justify-content:space-between}.owl-editorial .ed-hero-bottom{align-items:start;flex-direction:column}.owl-editorial .ed-hero-bottom span{text-align:left}.owl-editorial .ed-hero-visual{min-height:365px}.owl-editorial .ed-meta{font-size:.56rem!important}.owl-editorial .editorial-article blockquote{padding:20px}.owl-editorial .editorial-article>p:not(.eyebrow):not(.lead){font-size:1rem}}
+
+/* Real photographic editorial hero — replaces decorative refinery CSS artwork */
+.owl-editorial .ed-refinery-photo{margin:34px 0 0;max-width:none}
+.owl-editorial .ed-refinery-photo img{display:block;width:100%;height:clamp(280px,43vw,540px);object-fit:cover;object-position:center 50%;border-radius:3px;background:#102b37}
+.owl-editorial .ed-refinery-photo figcaption{font-size:.77rem;line-height:1.65;color:#60706b;margin-top:12px}
+.owl-editorial .ed-refinery-photo a{color:#08786d;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:600px){.owl-editorial .ed-refinery-photo img{height:265px}}
