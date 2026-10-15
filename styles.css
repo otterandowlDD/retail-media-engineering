@@ -36,3 +36,49 @@
 @media(max-width:1000px){.content-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:850px){.content-system-head,.case-panel{grid-template-columns:1fr}.content-badge{justify-self:start}.content-grid{grid-template-columns:1fr}.case-stat-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.case-stat-grid{grid-template-columns:1fr}.system-flow b{display:none}}
+
+
+/* Owlter Journal — standalone editorial design system; does not alter service pages */
+.owl-editorial{--bg:#f6f5f0;--panel:#fffefa;--text:#172627;--muted:#5f6b69;--line:#d8ddd6;--accent:#127469;background:var(--bg);color:var(--text);font-family:"Noto Sans Thai", "Thonburi", "Sarabun", ui-sans-serif,system-ui,sans-serif;line-height:1.85}
+.owl-editorial .nav{position:relative;background:#f6f5f0;border-bottom:1px solid #d8ddd6;padding-top:22px;padding-bottom:22px}
+.owl-editorial .nav .brand{font-size:1rem;letter-spacing:-.03em;color:var(--text)}
+.owl-editorial .nav nav a{color:#526361}
+.owl-editorial .nav nav a:hover{color:#12685f}
+.owl-editorial .eyebrow{color:#08786d;letter-spacing:.13em;font-size:.77rem;font-weight:800}
+.owl-editorial .article-page{max-width:1060px;padding-top:50px}
+.owl-editorial .editorial-article>.ed-meta{display:flex;justify-content:space-between;font-size:.66rem;letter-spacing:.16em;font-weight:800;border-bottom:1px solid var(--line);padding-bottom:16px;color:#697573;margin-bottom:55px}
+.owl-editorial .editorial-article>.eyebrow{margin-bottom:18px}
+.owl-editorial .editorial-article h1.article-title{font-family:"Noto Serif Thai", "Thonburi",Georgia,serif;font-weight:700;max-width:100%;font-size:clamp(2.5rem,5.2vw,5.1rem);line-height:1.27;letter-spacing:-.055em;margin-bottom:18px;text-wrap:balance}
+.owl-editorial .ed-deck{max-width:790px;font-size:clamp(1.08rem,2.1vw,1.35rem);line-height:1.8;color:#4d5e59;margin-bottom:40px}
+.owl-editorial .ed-hero-visual{position:relative;overflow:hidden;min-height:440px;border-radius:4px;background:linear-gradient(180deg,#264d51 0%,#122e32 62%,#092126 100%);margin:34px 0 0;padding:24px 30px;color:#e8f6ed;isolation:isolate}
+.owl-editorial .ed-hero-visual:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0,transparent 68px,rgba(255,255,255,.05) 69px,transparent 70px),linear-gradient(148deg,transparent 25%,rgba(160,237,209,.14) 68%,transparent 70%);z-index:-1}
+.owl-editorial .ed-hero-top,.owl-editorial .ed-hero-bottom,.owl-editorial .ed-author{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.owl-editorial .ed-hero-top{font-size:.65rem;letter-spacing:.15em;font-weight:800;opacity:.85}
+.owl-editorial .ed-factory{height:240px;position:relative;border-bottom:5px solid rgba(220,255,244,.47);margin-top:4px}
+.owl-editorial .ed-tower{position:absolute;bottom:0;border:2px solid #8bbfbc;background:repeating-linear-gradient(0deg,rgba(124,202,186,.15) 0,rgba(124,202,186,.15) 22px,transparent 23px,transparent 29px)}
+.owl-editorial .ed-tower:before{content:"";position:absolute;top:-13px;left:-7px;right:-7px;border-top:3px solid #acd5c9}
+.owl-editorial .ed-tower.t1{left:12%;width:11%;height:55%}.owl-editorial .ed-tower.t2{left:32%;width:8%;height:92%}.owl-editorial .ed-tower.t3{left:51%;width:17%;height:43%}.owl-editorial .ed-tower.t4{left:76%;width:7%;height:77%}
+.owl-editorial .ed-pipe{position:absolute;bottom:17%;left:2%;right:8%;height:16px;border:2px solid #8ab7ac;border-bottom:0}
+.owl-editorial .ed-hero-bottom{align-items:end;margin-top:24px}.owl-editorial .ed-hero-bottom strong{font-family:Georgia,serif;font-size:clamp(2.5rem,6vw,5.1rem);letter-spacing:-.06em;line-height:.95}.owl-editorial .ed-hero-bottom span{font-size:.67rem;letter-spacing:.1em;text-align:right}
+.owl-editorial .ed-author{padding:19px 0 32px;border-bottom:1px solid var(--line);font-size:.68rem;letter-spacing:.10em;color:#60706b;font-weight:800}
+.owl-editorial .editorial-article>p:not(.eyebrow):not(.lead),.owl-editorial .editorial-article>h2,.owl-editorial .editorial-article>blockquote,.owl-editorial .editorial-article>.flow,.owl-editorial .editorial-article>.article-note,.owl-editorial .editorial-article>.cta-row{max-width:755px;margin-left:auto;margin-right:auto}
+.owl-editorial .editorial-article>p:not(.eyebrow):not(.lead){font-size:1.07rem;line-height:2.05;margin-top:24px;margin-bottom:24px}
+.owl-editorial .editorial-article h2{font-family:"Noto Serif Thai",Georgia,serif;font-size:clamp(1.65rem,3vw,2.4rem);line-height:1.42;letter-spacing:-.035em;max-width:755px;margin-top:75px;margin-bottom:22px}
+.owl-editorial .editorial-article blockquote{font-family:"Noto Serif Thai",Georgia,serif;font-size:clamp(1.25rem,2.5vw,1.85rem);line-height:1.7;font-weight:600;border:0;border-left:4px solid #08786d;background:#e9f0ea;padding:25px 32px;border-radius:0;margin-top:44px;margin-bottom:44px}
+.owl-editorial .editorial-article .grid.three{max-width:870px;margin-left:auto;margin-right:auto;gap:12px}
+.owl-editorial .editorial-article .card{padding:26px 22px;border:1px solid #d4ded7;border-radius:5px;box-shadow:0 3px 12px rgba(25,66,56,.035)}
+.owl-editorial .editorial-article .card h3{font-family:Georgia,serif;font-size:1.3rem;line-height:1.35}
+.owl-editorial .editorial-article .card p{font-size:.96rem;line-height:1.75}
+.owl-editorial .editorial-article .flow span{background:#e6ede7;border-radius:3px;padding:9px 13px}
+.owl-editorial .editorial-article .article-note{background:#e9eee8;border-color:#ccd8d0;border-radius:4px;line-height:1.9}
+.owl-editorial .text-link{color:#08786d}
+.owl-editorial .primary{background:#0e7165;color:#fff}
+.owl-editorial .ghost{border-color:#a4b6ad;color:#234b44}
+.owl-editorial footer{font-size:.8rem}
+.owl-editorial .ed-index{padding-top:70px}.owl-editorial .ed-index>h1{font-family:Georgia,serif;font-size:clamp(3.3rem,7vw,7.2rem);max-width:900px;letter-spacing:-.08em;line-height:1.03;margin:22px 0}.owl-editorial .ed-index>h1 em{color:#0c7767;font-weight:400}.owl-editorial .ed-index>.lead{max-width:660px;line-height:1.8}
+.owl-editorial .ed-section-label{margin-top:72px;padding-top:22px;border-top:2px solid #193c39;display:flex;justify-content:space-between;font-size:.73rem;letter-spacing:.14em;font-weight:800}
+.owl-editorial .ed-section-label span{color:#7f8986}
+.owl-editorial .insight-list{grid-template-columns:1.4fr 1fr}.owl-editorial .insight-list .card{border-radius:5px;padding:34px;background:#fffefa}.owl-editorial .insight-list .card.featured{background:#e9f0e9;border-color:#adc9bc}
+.owl-editorial .insight-list .card h3{font-family:"Noto Serif Thai",Georgia,serif;font-size:clamp(1.3rem,2.3vw,2rem);line-height:1.48;letter-spacing:-.025em}.owl-editorial .insight-list .card p{line-height:1.9}
+@media(max-width:850px){.owl-editorial .article-page{padding-top:30px}.owl-editorial .editorial-article>.ed-meta{margin-bottom:32px}.owl-editorial .ed-hero-visual{min-height:360px;padding:18px}.owl-editorial .ed-factory{height:175px}.owl-editorial .ed-author{flex-wrap:wrap}.owl-editorial .insight-list{grid-template-columns:1fr}.owl-editorial .editorial-article h2{margin-top:50px}}
+@media(max-width:520px){.owl-editorial .nav{flex-wrap:wrap;gap:10px}.owl-editorial .nav nav{width:100%;justify-content:space-between}.owl-editorial .ed-hero-bottom{align-items:start;flex-direction:column}.owl-editorial .ed-hero-bottom span{text-align:left}.owl-editorial .ed-hero-visual{min-height:365px}.owl-editorial .ed-meta{font-size:.56rem!important}.owl-editorial .editorial-article blockquote{padding:20px}.owl-editorial .editorial-article>p:not(.eyebrow):not(.lead){font-size:1rem}}
