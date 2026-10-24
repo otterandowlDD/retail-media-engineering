@@ -358,3 +358,6 @@
 
 /* Owlter navigation identity */
 .nav .brand{display:inline-flex;align-items:center;gap:11px;min-width:0;line-height:1.2}.nav .brand-mark{width:42px;height:42px;display:block;flex:none;border-radius:10px}.nav .brand span{display:block}@media(max-width:560px){.nav .brand{gap:8px;font-size:.91rem}.nav .brand-mark{width:34px;height:34px}}
+
+/* People-free architectural hero asset, with existing image as graceful fallback until the JPG is uploaded. */
+.owl-homehero .homehero-art{background-image:url('/owlter-exhibition-no-people.jpg'),url('/owlter-exhibition.jpg');background-repeat:no-repeat;background-size:cover,cover;background-position:65% center,65% center}
