@@ -207,3 +207,28 @@
 .capabilities-grid p{color:#bfc8d1;line-height:1.7}
 @media(max-width:850px){.owl-homehero{min-height:600px;padding:80px 25px 50px}.owl-homehero .homehero-shade{background:linear-gradient(90deg,#09111bf5,#09111bd0 65%,#09111b77),linear-gradient(0deg,#09111b,transparent 50%)}.capabilities-grid{grid-template-columns:1fr}.home-capabilities .capabilities-heading{display:block}}
 @media(max-width:540px){.owl-homehero{padding:65px 20px 47px}.owl-homehero h1{font-size:clamp(2.5rem,11vw,4rem)}.owl-homehero .homehero-desc{font-size:.95rem}.owl-homehero .homehero-strip{gap:14px}.owl-homehero .homehero-disclaimer{position:static;margin-top:18px}.owl-homehero .cta-row{gap:9px}.owl-homehero .btn{padding:12px 14px;font-size:.83rem}}
+
+/* Desktop hero layout fix: override legacy .hero grid and oversized global h1 */
+@media (min-width: 1001px){
+  main>.owl-homehero.hero{display:flex;min-height:640px;padding:74px 60px 34px;align-items:stretch;justify-content:center}
+  .owl-homehero .homehero-content{width:51%;max-width:570px;margin-right:auto}
+  .owl-homehero h1{font-size:clamp(2.8rem,3.85vw,4.25rem);max-width:570px;line-height:1.09;letter-spacing:-.045em}
+  .owl-homehero .homehero-desc{max-width:520px;font-size:1rem;line-height:1.7}
+  .owl-homehero .homehero-art{background-size:cover;background-position:68% center}
+  .owl-homehero .homehero-shade{background:linear-gradient(90deg,#090f19 0%,#090f19f7 30%,#090f19cb 49%,#090f192b 77%,#090f1900 100%),linear-gradient(0deg,#090f1aea,transparent 21%)}
+  .owl-homehero .homehero-strip{width:100%;margin-top:35px}
+  .owl-homehero .homehero-audience{margin-top:24px}
+}
+@media (min-width: 1001px) and (max-width: 1220px){
+  main>.owl-homehero.hero{padding-left:35px;padding-right:35px}
+  .owl-homehero .homehero-content{width:55%}
+  .owl-homehero h1{font-size:clamp(2.6rem,4vw,3.45rem)}
+}
+@media (max-width: 1000px){
+  main>.owl-homehero.hero{display:flex;align-items:stretch}
+  .owl-homehero h1{max-width:650px;line-height:1.1}
+}
+@media (max-width: 540px){
+  .owl-homehero h1{font-size:clamp(2.25rem,10vw,3.4rem)}
+  .owl-homehero .homehero-art{background-position:64% center}
+}
