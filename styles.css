@@ -290,3 +290,13 @@
 .owl-line-qr .owl-line-qr-link{color:#182534;background:#e4c494;text-decoration:none;border-radius:5px;padding:13px 24px;font-weight:800}
 .owl-line-qr a:focus-visible{outline:3px solid #f4ce91;outline-offset:4px}
 @media(max-width:560px){.owl-line-qr{padding:23px 16px}}
+
+/* Discreet miniature LINE QR beneath contact actions */
+.owl-line-mini{display:flex;align-items:center;gap:12px;margin-top:20px;width:max-content;max-width:100%}
+.owl-line-mini>a{display:block;background:#fff;border-radius:10px;padding:6px;line-height:0;box-shadow:0 5px 20px #0004}
+.owl-line-mini img{display:block;width:74px;height:74px;object-fit:contain}
+.owl-line-mini>div{display:flex;flex-direction:column;gap:4px}
+.owl-line-mini strong{color:#f1d3a4;font-size:.92rem;letter-spacing:.01em}
+.owl-line-mini span{color:#aeb6c3;font-size:.82rem}
+.owl-line-mini a:focus-visible{outline:2px solid #e4c494;outline-offset:4px}
+@media(max-width:520px){.owl-line-mini img{width:64px;height:64px}}
