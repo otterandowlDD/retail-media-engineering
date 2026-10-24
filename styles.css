@@ -197,7 +197,7 @@
 .owl-homehero .homehero-strip a{color:#e9edf0;text-decoration:none;font-size:.77rem;font-weight:700;letter-spacing:.025em}
 .owl-homehero .homehero-strip a:hover{color:#efd0a0}
 .owl-homehero .homehero-disclaimer{position:absolute;right:16px;bottom:8px;color:#d1d7dd;font-size:.52rem;letter-spacing:.06em}
-.home-capabilities{padding-top:55px;padding-bottom:75px}
+.home-capabilities{padding-top:38px;padding-bottom:24px}
 .home-capabilities .capabilities-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:22px}
 .home-capabilities .capabilities-heading h2{font-size:clamp(1.7rem,3vw,2.8rem);max-width:560px}
 .capabilities-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
@@ -389,3 +389,9 @@ section[id]{scroll-margin-top:90px}
 .events-mini-services button.event-service-tab.is-active{background:#d9bb8e;border-color:#d9bb8e;color:#142233;box-shadow:0 3px 13px #0003}
 .events-mini-services button.event-service-tab:focus-visible{outline:2px solid #f1d6ae;outline-offset:3px}
 @media(max-width:850px){html{scroll-padding-top:110px}section[id]{scroll-margin-top:110px}}
+
+/* Vertical rhythm correction: 24px above + 32px below, rather than 75px + 88px */
+#services.section{padding-top:32px;padding-bottom:62px}
+.home-capabilities + #services{margin-top:0}
+#services .eyebrow{margin-top:0}
+@media(max-width:850px){.home-capabilities{padding-top:28px;padding-bottom:18px}#services.section{padding-top:26px;padding-bottom:44px}}
