@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-<title id="title">Owlter monogram</title>
-<desc id="desc">Refined O monogram with subtle symmetrical wing cuts in champagne gold against deep navy.</desc>
-<rect width="64" height="64" rx="12" fill="#132234"/>
-<g fill="none" stroke="#D9BB8E" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="square">
-<path d="M32 10C19.85 10 11 20.1 11 32s8.85 22 21 22 21-10.1 21-22S44.15 10 32 10Z"/>
+<title id="title">Owlter architectural owl emblem</title>
+<desc id="desc">Abstract symmetrical owl wings above three structural columns, in champagne gold on navy.</desc>
+<rect width="64" height="64" rx="10" fill="#132234"/>
+<g fill="#D9BB8E">
+<path d="M7 11 24 22 31 33 23 29C14 25 9 19 7 11Z"/>
+<path d="M57 11 40 22 33 33 41 29C50 25 55 19 57 11Z"/>
+<path d="M11 24 25 31 29 37 21 34C16 32 13 29 11 24Z"/>
+<path d="M53 24 39 31 35 37 43 34C48 32 51 29 53 24Z"/>
+<path d="M20 35 28 40 28 55 23 52 23 42Z"/>
+<path d="M44 35 36 40 36 55 41 52 41 42Z"/>
+<path d="M30 39 32 42 34 39 34 57 32 59 30 57Z"/>
 </g>
-<path fill="#D9BB8E" d="M18 27.5 30 33l2 5 2-5 12-5.5-8 12.5-6 4.5-6-4.5Z"/>
-<path fill="#132234" d="M20.5 31.5 29.4 35.3 32 40.4 34.6 35.3 43.5 31.5l-8.9 10.2-2.6 2-2.6-2Z"/>
-<path d="M25 18.5c2.5-1.4 4.8-2 7-2 2.2 0 4.5.6 7 2" fill="none" stroke="#D9BB8E" stroke-width="1" opacity=".65"/>
 </svg>
