@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-<title id="title">Owlter seal-inspired owl emblem</title><desc id="desc">A restrained owl symbol in champagne-gold relief and navy negative space, inspired by the composition of traditional Chinese seal carving.</desc>
-<rect width="64" height="64" rx="9" fill="#132234"/>
-<g fill="none" stroke="#d9bb8e" stroke-width="1.6" stroke-linejoin="miter">
-<path d="M10 10H54V54H10Z"/>
-<path d="M15 15h8M15 15v8M49 15h-8M49 15v8M15 49v-8M15 49h8M49 49v-8M49 49h-8" opacity=".55"/>
+<title id="title">Owlter monogram</title>
+<desc id="desc">Refined O monogram with subtle symmetrical wing cuts in champagne gold against deep navy.</desc>
+<rect width="64" height="64" rx="12" fill="#132234"/>
+<g fill="none" stroke="#D9BB8E" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="square">
+<path d="M32 10C19.85 10 11 20.1 11 32s8.85 22 21 22 21-10.1 21-22S44.15 10 32 10Z"/>
 </g>
-<path d="M17 22 24 17 32 22 40 17 47 22 44 39 32 49 20 39Z" fill="#d9bb8e"/>
-<path d="M19 25 26 27 32 34 38 27 45 25 41 35 34 38 32 43 30 38 23 35Z" fill="#132234"/>
-<path d="M26 25 32 30 38 25" fill="none" stroke="#132234" stroke-width="2.2" stroke-linecap="square"/>
-<path d="M30 36 32 39 34 36" fill="#d9bb8e"/>
+<path fill="#D9BB8E" d="M18 27.5 30 33l2 5 2-5 12-5.5-8 12.5-6 4.5-6-4.5Z"/>
+<path fill="#132234" d="M20.5 31.5 29.4 35.3 32 40.4 34.6 35.3 43.5 31.5l-8.9 10.2-2.6 2-2.6-2Z"/>
+<path d="M25 18.5c2.5-1.4 4.8-2 7-2 2.2 0 4.5.6 7 2" fill="none" stroke="#D9BB8E" stroke-width="1" opacity=".65"/>
 </svg>
