@@ -174,3 +174,9 @@
 .cost-report-foot{display:flex;gap:11px;flex-wrap:wrap;align-items:center;border-top:1px solid #374657;padding:22px 30px;color:#dfc7a2;font-size:.64rem;font-weight:750;letter-spacing:.08em}.cost-report-foot b{color:#6c8297}
 @media(max-width:760px){.cost-report-head,.cost-report-grid{grid-template-columns:1fr}.cost-report-head{padding:35px 24px;gap:20px}.cost-price{max-width:360px}.cost-analysis{border-left:0;border-top:1px solid #3b4b5c}.cost-breakdown,.cost-analysis{padding:28px 24px}.cost-report-top{padding:17px 20px;font-size:.56rem}.cost-report-foot{padding:18px 20px}}
 @media(max-width:420px){.cost-report h3{font-size:2.3rem}.cost-price strong{font-size:2.4rem}.cost-row strong{font-size:.92rem}}
+
+/* Luxe coffee cart concept photography */
+.coffee-luxe-visual{position:relative;margin:28px 0 24px;overflow:hidden;border-radius:18px;border:1px solid #35475a;background:#172334}
+.coffee-luxe-visual img{width:100%;height:auto;max-height:570px;object-fit:cover;display:block}
+.coffee-luxe-visual figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#0b111bcf);padding:26px 22px 13px;font-size:.64rem;letter-spacing:.12em;color:#f3e1c3}
+@media(max-width:600px){.coffee-luxe-visual img{height:285px;object-fit:cover}.coffee-luxe-visual figcaption{font-size:.52rem;padding:22px 12px 10px}}
