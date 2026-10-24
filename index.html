@@ -70,8 +70,12 @@
         <div class="events-compact-copy">
           <p class="events-label">EVENT ORGANIZING · EXHIBITION BOOTHS</p>
           <h2 id="events-title">Bring your brand<br><em>into the spotlight.</em></h2>
-          <p>Exhibition booths, pop-ups and corporate events. We coordinate planning, budgets, suppliers, installation and event-day delivery.</p>
-          <div class="events-mini-services"><span>Exhibition booths</span><span>Brand activation</span><span>Corporate events</span></div>
+          <p id="event-service-description" aria-live="polite">Exhibition booth planning, supplier sourcing, budgeting and on-site installation coordination.</p>
+          <div class="events-mini-services" role="group" aria-label="Choose event service">
+            <button type="button" class="event-service-tab is-active" data-event="exhibition" aria-pressed="true">Exhibition booths</button>
+            <button type="button" class="event-service-tab" data-event="activation" aria-pressed="false">Brand activation</button>
+            <button type="button" class="event-service-tab" data-event="corporate" aria-pressed="false">Corporate events</button>
+          </div>
           <a class="events-cta" href="https://line.me/R/ti/p/%40317esdzy" target="_blank" rel="noopener noreferrer">Request a quotation ↗</a>
         </div>
         <figure class="events-compact-photo"><img src="/owlter-exhibition.jpg" alt="AI concept image of a navy and gold exhibition booth" width="1672" height="941" loading="lazy"><figcaption>AI-GENERATED CONCEPT · NOT COMPLETED PROJECT WORK</figcaption></figure>
@@ -207,6 +211,26 @@
         caption.setAttribute("tabindex","-1");
         caption.removeAttribute("aria-pressed");
       });
+    })();
+  </script>
+  <script>
+    (() => {
+      const tabs = [...document.querySelectorAll(".event-service-tab")];
+      const text = document.getElementById("event-service-description");
+      const picture = document.querySelector(".events-compact-photo img");
+      const variants = {
+        exhibition: {description:"Exhibition booth planning, supplier sourcing, budgeting and on-site installation coordination.",src:"/owlter-exhibition.jpg",alt:"AI concept of a navy-and-gold exhibition booth"},
+        activation: {description:"Pop-up stores and brand activations, with space planning, fabrication partners and setup coordination.",src:"/owlter-popup-standard.jpg",alt:"AI concept of a premium retail pop-up"},
+        corporate: {description:"Corporate events and product launches, with venue, décor, production partner and event-day coordination.",src:"/owlter-exhibition-no-people.jpg",alt:"AI concept of a premium event space without people"}
+      };
+      tabs.forEach(tab => tab.addEventListener("click", () => {
+        const info = variants[tab.dataset.event];
+        if (!info) return;
+        tabs.forEach(item => {const active=item===tab;item.classList.toggle("is-active",active);item.setAttribute("aria-pressed",String(active));});
+        text.textContent=info.description;
+        picture.src=info.src;
+        picture.alt=info.alt;
+      }));
     })();
   </script>
   <footer>Owlter Engineering &amp; Solutions · Retail Media Engineering · LINE @317esdzy · k.hemngern@hotmail.com · <a href="https://digital-identity-card-two.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:4px;font-weight:600">Meet the Founder ↗</a></footer>
