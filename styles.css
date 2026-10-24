@@ -273,3 +273,10 @@
 .service-cards .card.is-selected .service-reveal{color:#fff}
 @media(max-width:850px){.service-cards .card.is-selected{transform:scale(1.015)}}
 @media(prefers-reduced-motion:reduce){.service-cards .card.is-selected{transform:none;outline:2px solid #dfbd8f}}
+
+/* Clickable whole-card interaction */
+.service-cards .card{cursor:pointer;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.service-cards .card:focus-visible{outline:3px solid #dfbd8f;outline-offset:5px}
+.service-cards .card .service-reveal{pointer-events:none}
+.service-cards .card:not(.is-selected):hover{transform:translateY(-3px);border-color:#a48a69}
+@media(prefers-reduced-motion:reduce){.service-cards .card:not(.is-selected):hover{transform:none}}
