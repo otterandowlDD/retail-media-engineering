@@ -361,3 +361,22 @@
 
 /* People-free architectural hero asset, with existing image as graceful fallback until the JPG is uploaded. */
 .owl-homehero .homehero-art{background-image:url('/owlter-exhibition-no-people.jpg'),url('/owlter-exhibition.jpg');background-repeat:no-repeat;background-size:cover,cover;background-position:65% center,65% center}
+
+/* Hero art direction v2: distinct reading panel + architectural image, no overlap */
+@media(min-width:1001px){
+  main>.owl-homehero.hero{background:#0c1521;display:flex;align-items:stretch;min-height:660px;padding:70px 44px 32px}
+  .owl-homehero .homehero-art{inset:0 0 0 52%;background-image:url('/owlter-exhibition-no-people.jpg');background-size:cover;background-position:86% center;z-index:-2}
+  .owl-homehero .homehero-shade{inset:0;background:linear-gradient(90deg,#0c1521 0%,#0c1521 49%,#0c152100 63%),linear-gradient(0deg,#0c1521cb,transparent 20%);z-index:-1}
+  .owl-homehero .homehero-content{width:50%;max-width:540px;margin-right:auto}
+  .owl-homehero h1{font-size:clamp(2.45rem,3.55vw,3.85rem);max-width:530px;line-height:1.13;letter-spacing:-.043em}
+  .owl-homehero .homehero-desc{font-size:.96rem;line-height:1.65;max-width:520px}
+  .owl-homehero .homehero-strip{margin-top:28px;background:#0c1521e8;padding:18px 0 6px}
+}
+@media(min-width:1001px) and (max-width:1220px){
+  main>.owl-homehero.hero{padding-left:30px;padding-right:30px}
+  .owl-homehero h1{font-size:clamp(2.4rem,3.5vw,3.1rem)}
+}
+@media(max-width:1000px){
+  .owl-homehero .homehero-art{background-image:url('/owlter-exhibition-no-people.jpg');background-position:90% center;opacity:.38}
+  .owl-homehero .homehero-shade{background:linear-gradient(90deg,#0b1421f7,#0b1421c9)}
+}
