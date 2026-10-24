@@ -124,3 +124,24 @@
 .owl-events a:focus-visible{outline:3px solid #e8d3a8;outline-offset:4px}
 @media(max-width:850px){.owl-events{padding:26px 24px 0}.owl-events .events-intro,.owl-events .events-showcase{grid-template-columns:1fr}.owl-events .events-intro{gap:12px;padding:40px 0}.owl-events .events-showcase-copy{padding:30px}.owl-events .events-services{grid-template-columns:1fr;padding:20px 0}.owl-events .events-services article,.owl-events .events-services article:first-child{border:0;border-bottom:1px solid #425060;padding:23px 0}.owl-events .events-bottom{margin:0 -24px;padding:30px 24px;flex-direction:column;align-items:flex-start}}
 @media(max-width:520px){.owl-events{margin:10px 0 45px;border-radius:15px}.owl-events .events-topline{font-size:.54rem}.owl-events .events-visual{min-height:300px}.owl-events .events-booth{width:78%}.owl-events .events-booth-wall{height:155px}.owl-events .events-booth-top{font-size:1rem}.owl-events .events-intro{padding:32px 0}.owl-events .events-intro-aside p{font-size:.94rem}}
+
+
+/* Events photography refresh */
+.owl-events .events-photo-hero{position:relative;margin:0;overflow:hidden;background:#142338}
+.owl-events .events-photo-hero img{width:100%;height:auto;max-height:630px;display:block;object-fit:cover}
+.owl-events .events-photo-hero figcaption{position:absolute;bottom:0;left:0;right:0;padding:22px 22px 13px;background:linear-gradient(transparent,#09111fc9);font-size:.62rem;letter-spacing:.12em;color:#fff1d8}
+.owl-events .events-showcase-new{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:43px 0 53px;border-bottom:1px solid #435264}
+.owl-events .events-showcase-new h3{font-size:clamp(2rem,3.5vw,3.4rem);margin:14px 0}
+.owl-events .events-showcase-new p{color:#c1c9ce;line-height:1.8;max-width:450px}
+.owl-events .events-photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:34px 0 52px}
+.owl-events .events-photo-card{background:#192a3d;overflow:hidden;padding-bottom:24px}
+.owl-events .events-photo-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:24px}
+.owl-events .events-photo-card>.events-small,.owl-events .events-photo-card h3,.owl-events .events-photo-card p,.owl-events .events-photo-card small{display:block;margin-left:25px;margin-right:25px}
+.owl-events .events-photo-card h3{font-size:clamp(1.6rem,2.6vw,2.6rem);margin-top:13px;margin-bottom:14px}
+.owl-events .events-photo-card p{color:#c1c9ce;line-height:1.8}
+.owl-events .events-photo-card small{font-size:.58rem;letter-spacing:.1em;color:#d4b98d;margin-top:22px}
+.owl-events .events-text-card{padding:30px 12px 25px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(140deg,#1d3045,#101d2d)}
+.owl-events .events-text-card .events-textlink{margin:18px 25px 0;align-self:flex-start}
+.owl-events .events-detail-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 25px}
+.owl-events .events-detail-list span{font-size:.79rem;color:#dfd0b5;border-top:1px solid #586172;padding-top:10px}
+@media(max-width:850px){.owl-events .events-showcase-new,.owl-events .events-photo-grid{grid-template-columns:1fr}.owl-events .events-showcase-new{gap:5px}.owl-events .events-photo-hero img{min-height:250px;object-fit:cover}.owl-events .events-photo-card img{aspect-ratio:16/9}.owl-events .events-text-card{min-height:320px}}
