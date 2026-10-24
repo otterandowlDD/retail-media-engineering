@@ -355,3 +355,6 @@
 .content-vertical-flow li:before{counter-increment:steps;content:counter(steps,decimal-leading-zero);position:absolute;left:-14px;top:0;background:#1c3045;border:1px solid #d9bb8e;color:#f2d5a6;border-radius:50%;width:29px;height:29px;display:grid;place-items:center;font-size:.64rem;font-weight:800}
 .content-vertical-flow li strong{color:#f6f1e9;font-size:.91rem;line-height:1.35}
 .content-vertical-flow li span{color:#bbc7d1;font-size:.8rem;line-height:1.5}
+
+/* Owlter navigation identity */
+.nav .brand{display:inline-flex;align-items:center;gap:11px;min-width:0;line-height:1.2}.nav .brand-mark{width:42px;height:42px;display:block;flex:none;border-radius:10px}.nav .brand span{display:block}@media(max-width:560px){.nav .brand{gap:8px;font-size:.91rem}.nav .brand-mark{width:34px;height:34px}}
