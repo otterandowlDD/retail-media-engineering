@@ -56,10 +56,10 @@
       <h2>Engineering between the campaign and the site.</h2>
       <p class="services-hint">EXPLORE OUR EXPERTISE <span aria-hidden="true">↗</span> &nbsp; Tap a service to highlight it.</p>
       <div class="grid four service-cards">
-        <article class="card featured"><p class="card-kicker">01 / PRE-EXECUTION</p><h3>Engineering Review</h3><p>Review drawings, technical requirements and project feasibility before execution.</p><button type="button" class="service-reveal" data-service="review" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
-        <article class="card"><p class="card-kicker">02 / PREPARATION</p><h3>Site & Scope</h3><p>Survey existing conditions, define site requirements and clarify scope.</p><button type="button" class="service-reveal" data-service="site" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
-        <article class="card"><p class="card-kicker">03 / COMMERCIAL</p><h3>Cost & Vendor</h3><p>BOQ, estimates, supplier comparisons and procurement coordination.</p><button type="button" class="service-reveal" data-service="cost" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
-        <article class="card"><p class="card-kicker">04 / DELIVERY</p><h3>Rollout & QC</h3><p>Installation planning, coordination, quality checks and handover.</p><button type="button" class="service-reveal" data-service="rollout" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
+        <article class="card featured" tabindex="0" role="button" aria-pressed="false" aria-label="Select Engineering Review service"><p class="card-kicker">01 / PRE-EXECUTION</p><h3>Engineering Review</h3><p>Review drawings, technical requirements and project feasibility before execution.</p><button type="button" class="service-reveal" data-service="review" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
+        <article class="card" tabindex="0" role="button" aria-pressed="false" aria-label="Select Site and Scope service"><p class="card-kicker">02 / PREPARATION</p><h3>Site & Scope</h3><p>Survey existing conditions, define site requirements and clarify scope.</p><button type="button" class="service-reveal" data-service="site" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
+        <article class="card" tabindex="0" role="button" aria-pressed="false" aria-label="Select Cost and Vendor service"><p class="card-kicker">03 / COMMERCIAL</p><h3>Cost & Vendor</h3><p>BOQ, estimates, supplier comparisons and procurement coordination.</p><button type="button" class="service-reveal" data-service="cost" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
+        <article class="card" tabindex="0" role="button" aria-pressed="false" aria-label="Select Rollout and Quality Control service"><p class="card-kicker">04 / DELIVERY</p><h3>Rollout & QC</h3><p>Installation planning, coordination, quality checks and handover.</p><button type="button" class="service-reveal" data-service="rollout" aria-pressed="false">Select service <span aria-hidden="true">＋</span></button></article>
       </div>
     </section>
 
@@ -246,21 +246,32 @@
 
   <script>
     (() => {
-      document.querySelectorAll(".service-reveal").forEach(button => {
-        button.addEventListener("click", () => {
-          const card = button.closest(".card");
-          const selected = !card.classList.contains("is-selected");
-          document.querySelectorAll(".service-cards .card").forEach(item => item.classList.remove("is-selected"));
-          document.querySelectorAll(".service-reveal").forEach(item => {
-            item.setAttribute("aria-pressed", "false");
-            item.innerHTML = 'Select service <span aria-hidden="true">＋</span>';
-          });
-          if (selected) {
-            card.classList.add("is-selected");
-            button.setAttribute("aria-pressed", "true");
-            button.innerHTML = 'Selected <span aria-hidden="true">✓</span>';
+      const cards = [...document.querySelectorAll(".service-cards .card")];
+      const selectCard = card => {
+        const selected = !card.classList.contains("is-selected");
+        cards.forEach(item => {
+          item.classList.remove("is-selected");
+          item.setAttribute("aria-pressed", "false");
+          const caption = item.querySelector(".service-reveal");
+          caption.innerHTML = 'Select service <span aria-hidden="true">＋</span>';
+        });
+        if (selected) {
+          card.classList.add("is-selected");
+          card.setAttribute("aria-pressed", "true");
+          card.querySelector(".service-reveal").innerHTML = 'Selected <span aria-hidden="true">✓</span>';
+        }
+      };
+      cards.forEach(card => {
+        card.addEventListener("click", () => selectCard(card));
+        card.addEventListener("keydown", event => {
+          if ((event.key === "Enter" || event.key === " ") && event.target === card) {
+            event.preventDefault();
+            selectCard(card);
           }
         });
+        const caption = card.querySelector(".service-reveal");
+        caption.setAttribute("tabindex","-1");
+        caption.removeAttribute("aria-pressed");
       });
     })();
   </script>
