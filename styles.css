@@ -280,3 +280,13 @@
 .service-cards .card .service-reveal{pointer-events:none}
 .service-cards .card:not(.is-selected):hover{transform:translateY(-3px);border-color:#a48a69}
 @media(prefers-reduced-motion:reduce){.service-cards .card:not(.is-selected):hover{transform:none}}
+
+/* Owlter LINE OA QR contact card */
+.owl-line-qr{background:linear-gradient(145deg,#182a3e,#101b2b);border:1px solid #826c50;border-radius:20px;padding:30px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;box-shadow:0 20px 55px #0005}
+.owl-line-qr-header{display:flex;flex-direction:column;gap:5px}.owl-line-qr-header span{font-size:.65rem;letter-spacing:.18em;color:#debf92;font-weight:800}.owl-line-qr-header strong{font:400 1.7rem Georgia,serif;color:#f6f1e8}
+.owl-line-qr>a:first-of-type{background:#fff;border-radius:15px;padding:13px;display:block;line-height:0;max-width:100%}
+.owl-line-qr img{display:block;width:min(260px,100%);height:auto;aspect-ratio:1;object-fit:contain}
+.owl-line-qr p{color:#c8d1da;max-width:300px;margin:0}
+.owl-line-qr .owl-line-qr-link{color:#182534;background:#e4c494;text-decoration:none;border-radius:5px;padding:13px 24px;font-weight:800}
+.owl-line-qr a:focus-visible{outline:3px solid #f4ce91;outline-offset:4px}
+@media(max-width:560px){.owl-line-qr{padding:23px 16px}}
