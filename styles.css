@@ -232,3 +232,35 @@
   .owl-homehero h1{font-size:clamp(2.25rem,10vw,3.4rem)}
   .owl-homehero .homehero-art{background-position:64% center}
 }
+
+/* Interactive luxury service detail dialogs */
+.services-hint{color:#aeb9c6;font-size:.8rem;letter-spacing:.03em;margin:24px 0 -14px}
+.services-hint span{color:#e2c092}.service-cards .card{display:flex;flex-direction:column;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.service-cards .card:hover{transform:translateY(-5px);border-color:#ae9067;box-shadow:0 16px 40px #0005}
+.service-cards .card h3{font-size:1.4rem}.service-cards .card p:not(.card-kicker){flex:1}
+.service-cards .card-kicker{color:#dfbd8f!important}
+.service-reveal{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:22px;padding:16px 0 3px;border:0;border-top:1px solid #455064;width:100%;background:transparent;color:#f1d1a0;font:700 .82rem/1.2 inherit;cursor:pointer;text-align:left}
+.service-reveal:hover{color:#fff}.service-reveal:focus-visible{outline:2px solid #e8c899;outline-offset:5px}
+.owl-service-dialog{position:fixed;inset:0;margin:auto;width:min(890px,calc(100vw - 38px));max-height:min(88vh,850px);padding:0;border:1px solid #6e665d;border-radius:18px;background:#111f2e;color:#f5f1e9;box-shadow:0 25px 90px #000a;overflow-y:auto}
+.owl-service-dialog::backdrop{background:#03070bdc;backdrop-filter:blur(9px)}
+.service-dialog-art{height:150px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:32px 45px;background:linear-gradient(100deg,#122439e8,#1c30429c),url('/owlter-exhibition.jpg') center 43%/cover;border-bottom:1px solid #7b6449}
+.service-dialog-art span:first-child{font:400 3rem/1 Georgia,serif;letter-spacing:.05em;color:#f1d4a5}
+.service-dialog-art span:last-child{font-size:.68rem;letter-spacing:.22em;margin-top:10px}
+.service-dialog-body{padding:34px 45px 40px}
+.service-dialog-top{display:flex;justify-content:space-between;align-items:center;gap:20px;color:#dfbd8f;font-size:.68rem;font-weight:800;letter-spacing:.16em}
+.service-dialog-close{border:1px solid #657184;background:#152839;color:#fff;border-radius:50%;width:40px;height:40px;font-size:1.7rem;cursor:pointer;line-height:1}
+.owl-service-dialog h2{font:400 clamp(2.3rem,4vw,4.1rem)/1.1 Georgia,serif;max-width:none;margin:20px 0}
+#service-dialog-description{font-size:1.07rem;color:#d1d7dc;line-height:1.75;max-width:670px}
+.service-dialog-rule{height:1px;background:#45576b;margin:24px 0}
+.service-dialog-caption{font-size:.67rem;letter-spacing:.18em;color:#dfbd8f;font-weight:800}
+#service-dialog-items{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;list-style:none;padding:0;margin:20px 0}
+#service-dialog-items li{border-top:1px solid #455467;padding:14px 0;color:#e5e8eb;line-height:1.5}
+#service-dialog-items li:before{content:"✦";color:#dfbd8f;margin-right:10px}
+.service-dialog-fineprint{color:#a9b6c4;font-size:.76rem;line-height:1.6;margin-top:22px}
+.service-dialog-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.service-dialog-actions a,.service-dialog-actions button{padding:14px 20px;text-decoration:none;font-size:.85rem;font-weight:800;cursor:pointer;border-radius:4px}
+.service-dialog-actions a{background:#dfbd8f;color:#142234;border:1px solid #dfbd8f}
+.service-dialog-actions button{border:1px solid #637286;color:#f5f1e9;background:transparent}
+.owl-service-dialog :focus-visible{outline:2px solid #eac995;outline-offset:3px}
+@media(max-width:650px){.service-dialog-art{height:112px;padding:20px 24px}.service-dialog-art span:first-child{font-size:2rem}.service-dialog-body{padding:24px}.owl-service-dialog h2{font-size:2.3rem}#service-dialog-items{grid-template-columns:1fr;gap:3px}.owl-service-dialog{max-height:90vh}}
+@media(prefers-reduced-motion:reduce){.service-cards .card{transition:none}.service-cards .card:hover{transform:none}}
