@@ -180,3 +180,30 @@
 .coffee-luxe-visual img{width:100%;height:auto;max-height:570px;object-fit:cover;display:block}
 .coffee-luxe-visual figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#0b111bcf);padding:26px 22px 13px;font-size:.64rem;letter-spacing:.12em;color:#f3e1c3}
 @media(max-width:600px){.coffee-luxe-visual img{height:285px;object-fit:cover}.coffee-luxe-visual figcaption{font-size:.52rem;padding:22px 12px 10px}}
+
+/* Clear premium homepage with genuine service navigation */
+.owl-homehero{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:690px;padding:85px 46px 68px;border-radius:0;overflow:hidden;isolation:isolate;max-width:none}
+.owl-homehero .homehero-art{position:absolute;inset:0;z-index:-3;background-image:url('/owlter-exhibition.jpg');background-size:cover;background-position:60% center}
+.owl-homehero .homehero-shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#090f19 0%,#090f19ee 32%,#090f19a3 53%,#090f1910 90%),linear-gradient(0deg,#090f1af2 0%,transparent 30%)}
+.owl-homehero .homehero-content{position:relative;max-width:680px}
+.owl-homehero .homehero-kicker{font-size:.77rem;color:#e6c28f;letter-spacing:.2em;font-weight:800}
+.owl-homehero h1{font-size:clamp(2.8rem,5.8vw,5.7rem);max-width:660px;line-height:1.02;letter-spacing:-.055em;margin:24px 0 27px}
+.owl-homehero h1 em{font-style:normal;color:#e8c79b}
+.owl-homehero .homehero-desc{color:#e0e2e5;font-size:1.06rem;max-width:600px;line-height:1.8}
+.owl-homehero .homehero-primary{background:#e4c494;color:#111b29}
+.owl-homehero .homehero-outline{border:1px solid #d6dce0;color:#fff;background:#11192866}
+.owl-homehero .homehero-audience{color:#d7c4a8;font-size:.69rem;letter-spacing:.12em;margin-top:37px;font-weight:750}
+.owl-homehero .homehero-strip{display:flex;flex-wrap:wrap;gap:11px 25px;margin-top:43px;padding-top:24px;border-top:1px solid #a6aeba7a}
+.owl-homehero .homehero-strip a{color:#e9edf0;text-decoration:none;font-size:.77rem;font-weight:700;letter-spacing:.025em}
+.owl-homehero .homehero-strip a:hover{color:#efd0a0}
+.owl-homehero .homehero-disclaimer{position:absolute;right:16px;bottom:8px;color:#d1d7dd;font-size:.52rem;letter-spacing:.06em}
+.home-capabilities{padding-top:55px;padding-bottom:75px}
+.home-capabilities .capabilities-heading{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:22px}
+.home-capabilities .capabilities-heading h2{font-size:clamp(1.7rem,3vw,2.8rem);max-width:560px}
+.capabilities-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.capabilities-grid article{padding:26px;border:1px solid #425064;background:#121c2a;border-radius:14px}
+.capabilities-grid article>span{font-size:.71rem;letter-spacing:.15em;color:#dec096;font-weight:800}
+.capabilities-grid h3{font-family:Georgia,serif;font-size:1.65rem;font-weight:400;margin:18px 0}
+.capabilities-grid p{color:#bfc8d1;line-height:1.7}
+@media(max-width:850px){.owl-homehero{min-height:600px;padding:80px 25px 50px}.owl-homehero .homehero-shade{background:linear-gradient(90deg,#09111bf5,#09111bd0 65%,#09111b77),linear-gradient(0deg,#09111b,transparent 50%)}.capabilities-grid{grid-template-columns:1fr}.home-capabilities .capabilities-heading{display:block}}
+@media(max-width:540px){.owl-homehero{padding:65px 20px 47px}.owl-homehero h1{font-size:clamp(2.5rem,11vw,4rem)}.owl-homehero .homehero-desc{font-size:.95rem}.owl-homehero .homehero-strip{gap:14px}.owl-homehero .homehero-disclaimer{position:static;margin-top:18px}.owl-homehero .cta-row{gap:9px}.owl-homehero .btn{padding:12px 14px;font-size:.83rem}}
