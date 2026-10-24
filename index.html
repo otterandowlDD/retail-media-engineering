@@ -54,15 +54,12 @@
     <section id="services" class="section">
       <p class="eyebrow">WHAT WE DO</p>
       <h2>Engineering between the campaign and the site.</h2>
-      <div class="grid four">
-        <article class="card featured">
-          <p class="card-kicker">PRE-EXECUTION</p>
-          <h3>Engineering Review</h3>
-          <p>Review campaign requirements, drawings and site information before fabrication or installation. Identify scope gaps, constructability issues, cost exposure and vendor requirements early.</p>
-        </article>
-        <article class="card"><h3>Site & Scope</h3><p>Site survey, existing-condition review, fixing and access considerations, constructability checks and clear scope definition before execution starts.</p></article>
-        <article class="card"><h3>Cost & Vendor</h3><p>BOQ, estimate, quotation comparison, fabrication coordination, vendor alignment and value decisions with engineering logic.</p></article>
-        <article class="card"><h3>Rollout & QC</h3><p>Installation coordination, sequencing, punch list, quality control, handover and repeatable multi-location rollout.</p></article>
+      <p class="services-hint">EXPLORE OUR EXPERTISE <span aria-hidden="true">↗</span> &nbsp; Select a service to see how we can support your project.</p>
+      <div class="grid four service-cards">
+        <article class="card featured"><p class="card-kicker">01 / PRE-EXECUTION</p><h3>Engineering Review</h3><p>Review drawings, technical requirements and project feasibility before execution.</p><button type="button" class="service-reveal" data-service="review" aria-haspopup="dialog">Explore service <span aria-hidden="true">↗</span></button></article>
+        <article class="card"><p class="card-kicker">02 / PREPARATION</p><h3>Site & Scope</h3><p>Survey existing conditions, define site requirements and clarify scope.</p><button type="button" class="service-reveal" data-service="site" aria-haspopup="dialog">Explore service <span aria-hidden="true">↗</span></button></article>
+        <article class="card"><p class="card-kicker">03 / COMMERCIAL</p><h3>Cost & Vendor</h3><p>BOQ, estimates, supplier comparisons and procurement coordination.</p><button type="button" class="service-reveal" data-service="cost" aria-haspopup="dialog">Explore service <span aria-hidden="true">↗</span></button></article>
+        <article class="card"><p class="card-kicker">04 / DELIVERY</p><h3>Rollout & QC</h3><p>Installation planning, coordination, quality checks and handover.</p><button type="button" class="service-reveal" data-service="rollout" aria-haspopup="dialog">Explore service <span aria-hidden="true">↗</span></button></article>
       </div>
     </section>
 
@@ -245,6 +242,50 @@
       </div>
     </section>
   </main>
+
+
+  <dialog class="owl-service-dialog" id="service-detail" aria-labelledby="service-dialog-title" aria-describedby="service-dialog-description">
+    <div class="service-dialog-art" aria-hidden="true"><span>OWLTER</span><span>ENGINEERING & SOLUTIONS</span></div>
+    <div class="service-dialog-body">
+      <div class="service-dialog-top"><span id="service-dialog-eyebrow">OWLTER / SERVICES</span><button type="button" id="service-dialog-close" class="service-dialog-close" aria-label="Close service details">×</button></div>
+      <h2 id="service-dialog-title">Engineering Review</h2>
+      <p id="service-dialog-description"></p>
+      <div class="service-dialog-rule"></div>
+      <p class="service-dialog-caption">HOW WE CAN HELP</p>
+      <ul id="service-dialog-items"></ul>
+      <p class="service-dialog-fineprint">Scope, deliverables and professional responsibilities are confirmed for each project before engagement.</p>
+      <div class="service-dialog-actions"><a href="https://line.me/R/ti/p/%40317esdzy" target="_blank" rel="noopener noreferrer">Discuss this service ↗</a><button type="button" id="service-dialog-back">Back to services</button></div>
+    </div>
+  </dialog>
+  <script>
+    (() => {
+      const details = {
+        review: {tag:"01 / PRE-EXECUTION",title:"Engineering Review",description:"Practical technical review before your concept moves into fabrication or installation.",items:["Review drawings, specifications and site information","Identify scope gaps and constructability risks","Highlight technical coordination and budget exposure","Prepare clear points for designers, contractors and suppliers"]},
+        site: {tag:"02 / PREPARATION",title:"Site & Scope",description:"Translate real site conditions into a scope that can be understood, quoted and executed.",items:["Review existing conditions and site constraints","Consider access, fixing, support and installation interfaces","Clarify measurable work items and execution assumptions","Coordinate technical questions before quotation or mobilization"]},
+        cost: {tag:"03 / COMMERCIAL",title:"Cost & Vendor",description:"Bring cost clarity and supplier alignment into project decision-making.",items:["Quantity take-off (QTO) and bill of quantities (BOQ)","Cost estimates and quotation comparison","Supplier and fabricator scope coordination","Review cost assumptions, allowances and commercial options"]},
+        rollout: {tag:"04 / DELIVERY",title:"Rollout & QC",description:"Coordinate the details that keep physical execution and handover on track.",items:["Installation sequence and multi-location rollout planning","Coordination between project, supplier and on-site teams","Quality checks, defect lists and corrective follow-up","Handover preparation and documentation support"]}
+      };
+      const modal = document.getElementById("service-detail");
+      if(!modal || typeof modal.showModal!=="function") return;
+      let opener = null;
+      document.querySelectorAll(".service-reveal").forEach(button => button.addEventListener("click", () => {
+        const data = details[button.dataset.service];
+        if(!data) return;
+        opener = button;
+        document.getElementById("service-dialog-eyebrow").textContent = "OWLTER / "+data.tag;
+        document.getElementById("service-dialog-title").textContent = data.title;
+        document.getElementById("service-dialog-description").textContent = data.description;
+        const list = document.getElementById("service-dialog-items");
+        list.replaceChildren(...data.items.map(item => {const li=document.createElement("li"); li.textContent=item; return li;}));
+        modal.showModal();
+      }));
+      const close=()=>modal.close();
+      document.getElementById("service-dialog-close").addEventListener("click",close);
+      document.getElementById("service-dialog-back").addEventListener("click",close);
+      modal.addEventListener("click",event=>{if(event.target===modal)close();});
+      modal.addEventListener("close",()=>{opener?.focus();});
+    })();
+  </script>
 
   <footer>Owlter Engineering &amp; Solutions · Retail Media Engineering · LINE @317esdzy · k.hemngern@hotmail.com · <a href="https://digital-identity-card-two.vercel.app/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:4px;font-weight:600">Meet the Founder ↗</a></footer>
 </body>
