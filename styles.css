@@ -422,3 +422,11 @@ section[id]{scroll-margin-top:90px}
 .owl-whatsapp-mini strong{color:#e6c99c;font-size:1.05rem}
 .owl-whatsapp-mini span{color:#c1cad5;font-size:.9rem;overflow-wrap:anywhere}
 @media(max-width:380px){.owl-whatsapp-mini{gap:12px;padding:12px}.owl-whatsapp-mini img{width:96px;height:96px}}
+
+/* Match LINE and WhatsApp QR presentation */
+.owl-whatsapp-mini{background:transparent;border:0;border-radius:0;padding:0;margin:22px 0;gap:16px}
+.owl-whatsapp-mini a{padding:0;border:2px solid #d9bb8e;border-radius:14px;overflow:hidden;background:#fff}
+.owl-whatsapp-mini img{width:88px;height:88px}
+.owl-whatsapp-mini strong{font-size:1rem}
+.owl-whatsapp-mini span{font-size:.88rem}
+@media(max-width:380px){.owl-whatsapp-mini img{width:88px;height:88px}}
