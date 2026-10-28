@@ -413,3 +413,12 @@ section[id]{scroll-margin-top:90px}
   .owl-homehero .cta-row .btn{text-align:center;width:100%;white-space:normal}
 }
 @media(max-width:380px){.nav .brand{font-size:.77rem}.owl-homehero h1{font-size:clamp(1.85rem,8.8vw,2.3rem)}}
+
+/* WhatsApp QR alongside existing LINE QR in contact section */
+.owl-whatsapp-mini{display:flex;align-items:center;gap:18px;margin:22px 0;padding:16px;border:1px solid #344355;border-radius:16px;background:#142132}
+.owl-whatsapp-mini a{display:block;flex:none;padding:8px;background:#fff;border-radius:12px;line-height:0}
+.owl-whatsapp-mini img{display:block;width:112px;height:112px;object-fit:contain}
+.owl-whatsapp-mini div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.owl-whatsapp-mini strong{color:#e6c99c;font-size:1.05rem}
+.owl-whatsapp-mini span{color:#c1cad5;font-size:.9rem;overflow-wrap:anywhere}
+@media(max-width:380px){.owl-whatsapp-mini{gap:12px;padding:12px}.owl-whatsapp-mini img{width:96px;height:96px}}
