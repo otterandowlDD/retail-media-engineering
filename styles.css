@@ -395,3 +395,49 @@ section[id]{scroll-margin-top:90px}
 .home-capabilities + #services{margin-top:0}
 #services .eyebrow{margin-top:0}
 @media(max-width:850px){.home-capabilities{padding-top:28px;padding-bottom:18px}#services.section{padding-top:26px;padding-bottom:44px}}
+
+/* Responsive Owlter navigation + international contact */
+.mobile-menu-toggle{display:none}.homehero-whatsapp{background:#1e7656;color:#fff;border:1px solid #53a783}
+@media(max-width:850px){
+  .nav{position:sticky;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;min-height:68px;z-index:100}
+  .nav .brand{flex:1 1 auto;min-width:0;max-width:calc(100% - 62px);font-size:clamp(.78rem,3.3vw,.95rem);overflow-wrap:break-word}
+  .nav .brand span{min-width:0}
+  .mobile-menu-toggle{display:flex;flex:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;border:1px solid #6d7786;border-radius:10px;background:#172538;cursor:pointer}
+  .mobile-menu-toggle span{width:20px;height:2px;background:#e9d1a9;border-radius:2px}
+  .nav nav#primary-navigation{display:none;position:absolute;left:0;right:0;top:100%;padding:14px 20px 20px;background:#101b2a;border-bottom:1px solid #77664f;box-shadow:0 15px 24px #0006;flex-direction:column;align-items:stretch;gap:0;font-size:1rem}
+  .nav nav#primary-navigation.is-open{display:flex}
+  .nav nav#primary-navigation a{display:block;padding:12px 6px;border-bottom:1px solid #ffffff19}
+  .owl-homehero h1{font-size:clamp(2rem,9vw,3rem);line-height:1.12;overflow-wrap:normal}
+  .owl-homehero .homehero-content{min-width:0}
+  .owl-homehero .cta-row{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+  .owl-homehero .cta-row .btn{text-align:center;width:100%;white-space:normal}
+}
+@media(max-width:380px){.nav .brand{font-size:.77rem}.owl-homehero h1{font-size:clamp(1.85rem,8.8vw,2.3rem)}}
+
+/* WhatsApp QR alongside existing LINE QR in contact section */
+.owl-whatsapp-mini{display:flex;align-items:center;gap:18px;margin:22px 0;padding:16px;border:1px solid #344355;border-radius:16px;background:#142132}
+.owl-whatsapp-mini a{display:block;flex:none;padding:8px;background:#fff;border-radius:12px;line-height:0}
+.owl-whatsapp-mini img{display:block;width:112px;height:112px;object-fit:contain}
+.owl-whatsapp-mini div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.owl-whatsapp-mini strong{color:#e6c99c;font-size:1.05rem}
+.owl-whatsapp-mini span{color:#c1cad5;font-size:.9rem;overflow-wrap:anywhere}
+@media(max-width:380px){.owl-whatsapp-mini{gap:12px;padding:12px}.owl-whatsapp-mini img{width:96px;height:96px}}
+
+/* Match LINE and WhatsApp QR presentation */
+.owl-whatsapp-mini{background:transparent;border:0;border-radius:0;padding:0;margin:22px 0;gap:16px}
+.owl-whatsapp-mini a{padding:0;border:2px solid #d9bb8e;border-radius:14px;overflow:hidden;background:#fff}
+.owl-whatsapp-mini img{width:88px;height:88px}
+.owl-whatsapp-mini strong{font-size:1rem}
+.owl-whatsapp-mini span{font-size:.88rem}
+@media(max-width:380px){.owl-whatsapp-mini img{width:88px;height:88px}}
+
+/* Contact art direction: two matching, quiet navy-and-champagne QR rows */
+#contact .owl-contact-channel{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:20px;width:100%;max-width:500px;margin:16px 0 0;padding:18px 20px;background:linear-gradient(135deg,#172638,#111c2b);border:1px solid #354458;border-radius:18px;box-shadow:0 12px 28px #0002}
+#contact .owl-contact-channel>a{display:grid;place-items:center;width:96px;height:96px;padding:8px;background:#faf8f3;border:1px solid #d7bd93;border-radius:12px;overflow:hidden;box-shadow:none;line-height:0}
+#contact .owl-contact-channel img{display:block;width:78px;height:78px;object-fit:contain}
+#contact .owl-contact-channel>div{display:flex;flex-direction:column;gap:4px;min-width:0}
+#contact .owl-contact-channel strong{font-size:1rem;line-height:1.3;letter-spacing:.01em;color:#e5c99c}
+#contact .owl-contact-channel span{font-size:.82rem;line-height:1.45;color:#aebdce;overflow-wrap:anywhere}
+#contact .owl-contact-channel .channel-detail{color:#f1f2f4;font-size:.9rem;font-weight:600}
+#contact .owl-contact-channel a:focus-visible{outline:2px solid #f2d6a5;outline-offset:3px}
+@media(max-width:420px){#contact .owl-contact-channel{grid-template-columns:84px minmax(0,1fr);gap:14px;padding:14px}#contact .owl-contact-channel>a{width:84px;height:84px;padding:7px}#contact .owl-contact-channel img{width:68px;height:68px}#contact .owl-contact-channel strong{font-size:.92rem}}
