@@ -430,3 +430,14 @@ section[id]{scroll-margin-top:90px}
 .owl-whatsapp-mini strong{font-size:1rem}
 .owl-whatsapp-mini span{font-size:.88rem}
 @media(max-width:380px){.owl-whatsapp-mini img{width:88px;height:88px}}
+
+/* Contact art direction: two matching, quiet navy-and-champagne QR rows */
+#contact .owl-contact-channel{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:20px;width:100%;max-width:500px;margin:16px 0 0;padding:18px 20px;background:linear-gradient(135deg,#172638,#111c2b);border:1px solid #354458;border-radius:18px;box-shadow:0 12px 28px #0002}
+#contact .owl-contact-channel>a{display:grid;place-items:center;width:96px;height:96px;padding:8px;background:#faf8f3;border:1px solid #d7bd93;border-radius:12px;overflow:hidden;box-shadow:none;line-height:0}
+#contact .owl-contact-channel img{display:block;width:78px;height:78px;object-fit:contain}
+#contact .owl-contact-channel>div{display:flex;flex-direction:column;gap:4px;min-width:0}
+#contact .owl-contact-channel strong{font-size:1rem;line-height:1.3;letter-spacing:.01em;color:#e5c99c}
+#contact .owl-contact-channel span{font-size:.82rem;line-height:1.45;color:#aebdce;overflow-wrap:anywhere}
+#contact .owl-contact-channel .channel-detail{color:#f1f2f4;font-size:.9rem;font-weight:600}
+#contact .owl-contact-channel a:focus-visible{outline:2px solid #f2d6a5;outline-offset:3px}
+@media(max-width:420px){#contact .owl-contact-channel{grid-template-columns:84px minmax(0,1fr);gap:14px;padding:14px}#contact .owl-contact-channel>a{width:84px;height:84px;padding:7px}#contact .owl-contact-channel img{width:68px;height:68px}#contact .owl-contact-channel strong{font-size:.92rem}}
